@@ -19,4 +19,10 @@ find . -type d -iname '*INK*' -exec cp -r {} $DIR/Abyss-INK \;
 find . -type d -iname '*Arc-BLACK*' -exec cp -r {} $DIR/Arc-Black \;
 find . -type d -iname '*Arc-BLACKEST*' -exec cp -r {} $DIR/Arc-Black \;
 find . -type d -iname '*Arc-Dark*' -exec cp -r {} $DIR/Arc-Dark \;
+find . -type d -iname '*Arc-Darkest-Nord*' -exec cp -r {} $DIR/Arc-Darkest-Nord \;
+find . -type d -iname '*Arc-Darkest-Numix*' -exec cp -r {} $DIR/Arc-Darkest-Numix \;
+find . -type d -iname '*Arc-Darkest-Solarized*' -exec cp -r {} $DIR/Arc-Darkest-Solarized \;
+find . -type d -iname '*Arc-Darkest-Suru*' -exec cp -r {} $DIR/Arc-Darkest-Suru \;
+find . -type d -iname '*Arc-Darkest*' -exec cp -r {} $DIR/Arc-Darkest \;
+find . -type d -iname '*Arc-Extra*' -exec cp -r {} $DIR/Arc-Extra-Dark \;
 
