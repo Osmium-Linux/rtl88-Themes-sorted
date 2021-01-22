@@ -15,7 +15,8 @@ jobs:
     steps: 
     - name: Sort Themes
       run: |
-        apt install -y git findutils sudo
+        whoami
+        sudo apt install -y git findutils sudo
         git clone https://github.com/Osmium-Linux/rtl88-Themes-sorted
         cd rtl88-Themes-sorted
         sudo chmod +x ./sort.sh
