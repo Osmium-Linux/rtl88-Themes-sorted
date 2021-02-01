@@ -5,6 +5,7 @@ mkdir input
 cd input
 git clone https://github.com/Osmium-Linux/rtl88-Themes-main.git
 cd rtl88-Themes-main
+cd themes
 RTDIR="$(pwd)"
 ### Do a bunch of sorting into various folders
 find . -type d -iname '*AD-BlueAgave*' -exec cp -r {} $DIR/output/AD-BlueAgave \;
