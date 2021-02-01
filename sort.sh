@@ -123,3 +123,6 @@ find . -type d -iname '*Ultimate-Plata-Aspromauros*' -exec cp -r {} $DIR/output/
 find . -type d -iname '*Ultimate-Plata-Suru*' -exec cp -r {} $DIR/output/Ultimate-Plata-Suru \;
 find . -type d -iname '*UPL-Suru*' -exec cp -r {} $DIR/output/Ultimate-Plata-Suru \;
 find . -type d -iname '*UPL-Material*' -exec cp -r {} $DIR/output/Ultimate-Plata-Material \;
+
+cd $DIR
+rm -rf input
