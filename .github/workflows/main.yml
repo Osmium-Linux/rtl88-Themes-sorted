@@ -17,14 +17,7 @@ jobs:
     steps: 
     - name: Sort Themes
       run: |
-        #wget https://github.com/apache/flink/raw/master/tools/azure-pipelines/free_disk_space.sh
-        #chmod +x free_disk_space.sh
-        #sh free_disk_space.sh
-        #rm -rf "/usr/local/share/boost"
-        #rm -rf "$AGENT_TOOLSDIRECTORY"
-        #sudo apt clean
         set -x
-        #whoami
         sudo apt install -y git findutils sudo
         git clone https://github.com/Osmium-Linux/rtl88-Themes-sorted
         cd rtl88-Themes-sorted
