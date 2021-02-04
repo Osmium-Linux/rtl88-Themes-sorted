@@ -40,5 +40,5 @@ jobs:
         git checkout main
         git add .
         # Only commit and push if we have changes
-        git diff --quiet && git diff --staged --quiet || (git commit -m "${COMMIT_MSG}"; git push origin main)
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update Sorted Themes"; git push origin main)
 
