@@ -1,12 +1,130 @@
+DIR="$(pwd)"
+RTDIR="$(pwd)"
+### Create the various folders to sort into
+mkdir -p $DIR/output/AD-BlueAgave 
+mkdir -p $DIR/output/AD-Kiwi 
+mkdir -p $DIR/output/AD-Plum 
+mkdir -p $DIR/output/AD-Strawberry 
+mkdir -p $DIR/output/AD-Tangerine 
+# AD = Arc-Dark
+mkdir -p $DIR/output/Abyss-Blood 
+mkdir -p $DIR/output/Abyss-Deep 
+mkdir -p $DIR/output/Abyss-Envy 
+mkdir -p $DIR/output/Abyss-Ink 
+#Abyss Themes
+mkdir -p $DIR/output/Arc-Blackest 
+mkdir -p $DIR/output/Arc-Black 
+mkdir -p $DIR/output/Arc-Dark 
+mkdir -p $DIR/output/Arc-Darkest-Nord 
+mkdir -p $DIR/output/Arc-Darkest-Numix 
+mkdir -p $DIR/output/Arc-Darkest-Addons 
+mkdir -p $DIR/output/Arc-Darkest 
+mkdir -p $DIR/output/Arc-Extra-Dark 
+mkdir -p $DIR/output/Arc-Icons 
+#Arc Themes and Icons
+mkdir -p $DIR/output/Avidity-Dusk 
+mkdir -p $DIR/output/Avidity-Grape 
+mkdir -p $DIR/output/Avidity-Total-Dusk 
+#Avidity Themes and Icons
+mkdir -p $DIR/output/Black-Frost 
+mkdir -p $DIR/output/Black-Gold 
+mkdir -p $DIR/output/Black-Grape 
+mkdir -p $DIR/output/Black-Ice 
+mkdir -p $DIR/output/Black-Olive 
+mkdir -p $DIR/output/Black-Pomegranate 
+mkdir -p $DIR/output/Black-Steel 
+mkdir -p $DIR/output/Black-Slate 
+mkdir -p $DIR/output/Black-Frost 
+mkdir -p $DIR/output/Numix-Flat 
+#Black Themes and Icons
+mkdir -p $DIR/output/BWNB 
+#BWNB
+mkdir -p $DIR/output/COBA 
+#COBA
+mkdir -p $DIR/output/Crushed-Blueberry 
+mkdir -p $DIR/output/Crushed-Ice 
+mkdir -p $DIR/output/Crushed-Limes 
+mkdir -p $DIR/output/Crushed-Raspberry 
+#Crushed
+mkdir -p $DIR/output/Chromeos-Dark 
+mkdir -p $DIR/output/Chromeos-Deep 
+mkdir -p $DIR/output/Chromeos-Marsala 
+mkdir -p $DIR/output/Chromeos-Oceanic 
+mkdir -p $DIR/output/Chromeos-Slate 
+mkdir -p $DIR/output/Chromeos-Superdark 
+mkdir -p $DIR/output/Chromeos-UV 
+#ChromeOS
+mkdir -p $DIR/output/Enchanted 
+#Enchanted
+mkdir -p $DIR/output/MB-Cherry-Suru-Glow 
+mkdir -p $DIR/output/Cherry-Numix 
+mkdir -p $DIR/output/Cherry-Suru 
+mkdir -p $DIR/output/Cherry 
+#Material
+mkdir -p $DIR/output/MB-Lime-Suru-Glow 
+mkdir -p $DIR/output/Material-Black-Lime 
+mkdir -p $DIR/output/MB-Blueberry-Suru-Glow 
+mkdir -p $DIR/output/MB-Mango-Suru-Glow 
+mkdir -p $DIR/output/MB-Pistachio-Suru-Glow 
+mkdir -p $DIR/output/MB-Plum-Suru-Glow 
+mkdir -p $DIR/output/Material-Black-Blueberry 
+mkdir -p $DIR/output/Material-Black-Cherry 
+mkdir -p $DIR/output/Material-Black-Frost 
+mkdir -p $DIR/output/Material-Black-Mango 
+mkdir -p $DIR/output/Material-Black-Pistachio 
+mkdir -p $DIR/output/Material-Black-Plum 
+mkdir -p $DIR/output/Material-Holiday 
+mkdir -p $DIR/output/Material-Magic 
+mkdir -p $DIR/output/Material-Solarized 
+#Material Themes
+mkdir -p $DIR/output/Punk-Dark 
+mkdir -p $DIR/output/Punk-Gamma 
+mkdir -p $DIR/output/Punk-Ozone 
+mkdir -p $DIR/output/Punk-Pain 
+mkdir -p $DIR/output/Punk-Sweet 
+#Punk
+mkdir -p $DIR/output/Solarized-Black 
+mkdir -p $DIR/output/Solarized-Colors 
+mkdir -p $DIR/output/Solarized-Tabs 
+mkdir -p $DIR/output/Solarized-Blue 
+mkdir -p $DIR/output/Solarized-Cyan 
+mkdir -p $DIR/output/Solarized-Green 
+mkdir -p $DIR/output/Solarized-Magenta 
+mkdir -p $DIR/output/Solarized-Orange 
+mkdir -p $DIR/output/Solarized-Dark 
+mkdir -p $DIR/output/Solarized-Deluxe 
+mkdir -p $DIR/output/Solarized-Light 
+#Solarized
+mkdir -p $DIR/output/Ultimate-Punk-Suru 
+mkdir -p $DIR/output/Ultimate-Punk-Suru-Tabs 
+mkdir -p $DIR/output/Ultimate-Punk-Cursors 
+mkdir -p $DIR/output/Ultimate-Punk-Themes 
+mkdir -p $DIR/output/Ultimate-Punk-Suru++ 
+mkdir -p $DIR/output/Ultimate-Punk-Light-Suru 
+#Ultimate Punk
+mkdir -p $DIR/output/Ultimate-Plata-Dark-Indigo 
+mkdir -p $DIR/output/Ultimate-Plata-Dark 
+mkdir -p $DIR/output/Ultimate-Plata-Light 
+mkdir -p $DIR/output/Ultimate-Plata-Gnome 
+mkdir -p $DIR/output/Ultimate-Plata-Material 
+mkdir -p $DIR/output/Ultimate-Plata-Suru-Tabs 
+mkdir -p $DIR/output/Ultimate-Plata-Numix 
+mkdir -p $DIR/output/Ultimate-Plata-Papirus 
+mkdir -p $DIR/output/Ultimate-Plata-Suru++-Gradient 
+mkdir -p $DIR/output/Ultimate-Plata-Suru++ 
+mkdir -p $DIR/output/Ultimate-Plata-Suru++-Aspromauros 
+mkdir -p $DIR/output/Ultimate-Plata-Suru 
+mkdir -p $DIR/output/Ultimate-Plata-Suru 
+mkdir -p $DIR/output/Ultimate-Plata-Material 
+cd $DIR
+
 ### Base Command: find . -type d -iname '*foobar*' -exec cp -r {} $DIR/output/ \;
 
-DIR="$(pwd)"
 mkdir input
 cd input
 git clone https://github.com/Osmium-Linux/rtl88-Themes-main.git
 cd rtl88-Themes-main
 cd themes
-RTDIR="$(pwd)"
 ### Do a bunch of sorting into various folders
 find . -type d -iname '*AD-BlueAgave*' -exec cp -r {} $DIR/output/AD-BlueAgave \;
 find . -type d -iname '*AD-Kiwi*' -exec cp -r {} $DIR/output/AD-Kiwi \;
